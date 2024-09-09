@@ -1,10 +1,13 @@
 # SwiftGL OpenGL
 
+## Attention
+This is a fork of [SwiftGL](https://github.com/SwiftGL/OpenGL) updated for newer swift versions
+
 To use, include dependency in your `Package.swift`:
 ```swift
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/SwiftGL/OpenGL.git", majorVersion: 3)
+        .package(url: "https://github.com/Hoetty/SGLOpenGL.git", branch: "master")
     ]
 )
 ```
