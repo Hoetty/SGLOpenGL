@@ -151,7 +151,7 @@ func getAddress(_ info: CommandInfo) -> UnsafeMutableRawPointer {
     
     func lookupAddress(info: CommandInfo) -> UnsafeMutableRawPointer? {
         if dlopenHandle == nil {
-            dlopenHandle = dlopen(nil, RTLD_LAZY | RTLD_LOCAL)
+            dlopenHandle = dlopen("libGL.so.1", RTLD_LAZY | RTLD_LOCAL)
         }
         if dlopenHandle == nil {
             fatalError("Failed to obtain dlopenHandle")
