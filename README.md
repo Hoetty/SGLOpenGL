@@ -7,7 +7,7 @@ To use, include dependency in your `Package.swift`:
 ```swift
 let package = Package(
     dependencies: [
-        .Package(url: "https://github.com/Hoetty/SGLOpenGL.git", majorVersion: 3)
+        .package(url: "https://github.com/Hoetty/SGLOpenGL.git", from: "3.0.0")
     ]
 )
 ```
